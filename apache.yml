@@ -1,0 +1,19 @@
+---
+- name: Install Apache2 and PHP
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+   - apache2
+   - php
+   - php-cli
+
+- name: Install mariadb client
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+   - mariadb-client
