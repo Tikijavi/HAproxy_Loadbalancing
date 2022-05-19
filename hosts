@@ -1,0 +1,6 @@
+[dbservers]
+192.168.7.3 ansible_ssh_user=Tikijavi01 ansible_ssh_private_key_file=~/Gitkey
+
+[webservers]
+192.168.7.2 ansible_ssh_user=Tikijavi01 ansible_ssh_private_key_file=~/Gitkey
+192.168.7.3 ansible_ssh_user=Tikijavi01 ansible_ssh_private_key_file=~/Gitkey
