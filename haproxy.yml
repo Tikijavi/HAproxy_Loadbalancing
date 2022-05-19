@@ -1,0 +1,26 @@
+- name: Install HAproxy
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+   - haproxy
+
+- name: Copy the HAproxy config file 
+  become: yes
+  copy:
+    src: ./files/haproxy.cfg
+    dest: /etc/haproxy/haproxy.cfg
+
+- name: Start service
+  become: yes
+  service:
+    name: haproxy
+    state: started
+
+- name: Restart service 
+  become: yes
+  service:
+    name: haproxy
+    state: restarted
