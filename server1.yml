@@ -1,0 +1,5 @@
+- name: Copy the index to the folder
+  become: yes
+  copy:
+    src: ./files/server1.html
+    dest: /var/www/html/index.html
