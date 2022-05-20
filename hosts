@@ -1,6 +1,6 @@
 [loadbalancer]
-54.161.76.210 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/
+54.161.76.210 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/joc-key-pair
 
 [webservers]
-54.209.249.5 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/
-54.198.128.50 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/
+54.209.249.5 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/joc-key-pair
+54.198.128.50 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=~/joc-key-pair
