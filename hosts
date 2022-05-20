@@ -1,6 +1,6 @@
 [loadbalancer]
-192.168.7.10 ansible_ssh_user=server ansible_ssh_pass=123456
+54.161.76.210 ansible_ssh_user=ubuntu ansible_ssh_pass=123456
 
 [webservers]
-192.168.7.2 ansible_ssh_user=server ansible_ssh_pass=123456
-192.168.7.3 ansible_ssh_user=server ansible_ssh_pass=123456
+54.209.249.5 ansible_ssh_user=ubuntu ansible_ssh_pass=123456
+54.198.128.50 ansible_ssh_user=ubuntu ansible_ssh_pass=123456
