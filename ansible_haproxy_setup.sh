@@ -17,11 +17,16 @@ wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/loadb
 wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/hosts
 wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/server1.html
 wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/server2.html
+wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/server1.yml
+wget https://raw.githubusercontent.com/Tikijavi/HAproxy_Loadbalancing/main/server2.yml
 sudo rm /etc/ansible/hosts
 sudo mv hosts /etc/ansible/hosts
 sudo mv apache.yml /etc/ansible/roles/apache/tasks/main.yml
 sudo mv haproxy.yml /etc/ansible/roles/haproxy/tasks/main.yml
 sudo mv haproxy.cfg /etc/ansible/roles/haproxy/files/haproxy.cfg
-sudo mv server1.html /etc/ansible/roles/apache/files/index.html
-sudo mv server2.html /etc/ansible/roles/apache/files/index.html
+sudo mv server1.html /etc/ansible/roles/server1/files/index.html
+sudo mv server2.html /etc/ansible/roles/server2/files/index.html
+sudo mv server1.yml /etc/ansible/roles/server1/tasks/main.yml
+sudo mv server2.yml /etc/ansible/roles/server2/tasks/main.yml
+
 echo "I am ready, you?"
