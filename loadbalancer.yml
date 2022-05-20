@@ -1,7 +1,15 @@
 - hosts: webservers
   roles:
-    - { role: apache2 }
+    - { role: apache }
 
 - hosts: loadbalancer
   roles:
     - { role: haproxy }
+
+- hosts: loadbalancer
+  roles:
+    - { role: server1 }
+
+- hosts: loadbalancer
+  roles:
+    - { role: server2 }
