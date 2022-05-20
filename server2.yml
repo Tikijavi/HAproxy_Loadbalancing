@@ -3,3 +3,9 @@
   copy:
     src: ./files/index.html
     dest: /var/www/html/index.html
+
+- name: Restart service 
+  become: yes
+  service:
+    name: apache2
+    state: restarted
