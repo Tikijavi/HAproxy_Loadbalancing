@@ -11,5 +11,5 @@
     - { role: server1 }
 
 - hosts: servidor2
-  roles: servidor2
+  roles:
     - { role: server2 }
