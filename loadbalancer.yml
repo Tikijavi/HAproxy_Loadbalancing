@@ -10,6 +10,6 @@
   roles:
     - { role: server1 }
 
-- hosts: 54.198.128.50
+- hosts: servidor2
   roles: servidor2
     - { role: server2 }
