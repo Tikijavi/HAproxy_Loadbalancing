@@ -6,10 +6,10 @@
   roles:
     - { role: haproxy }
 
-- hosts: 54.209.249.5
+- hosts: servidor1
   roles:
     - { role: server1 }
 
 - hosts: 54.198.128.50
-  roles:
+  roles: servidor2
     - { role: server2 }
