@@ -4,7 +4,7 @@ clone the repository
 
 generate a key pair
 
-change the key-pair variable on variables.tf and change the route to the key in ec2_ansible.tf
+change the key-pair variable on variables.tf and change the route to the key in ec2_ansible.tf + in the key-tf
 
 apply the terraform
 
